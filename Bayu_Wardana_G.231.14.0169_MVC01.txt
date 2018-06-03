@@ -1,0 +1,31 @@
+1. Variabel / Objek yang dibuat
+  variabel/objek yang di buat pada VehicleController.java
+	* Objek class VehicleController
+	* Objek ModelAndView
+	* Variabel Vehicle
+  variabel/objek yang di buat pada Vehicle.java
+	*Variabel String move
+  variabel/objek yang di buat pada SuperCar.java
+	*Objek class SuperCar
+	*Variabel String brand;
+	*Variabel String type;
+	*Variabel String engine;
+	*Variabel String transmission;
+	*Variabel String fuel;
+	*Variabel String motion;
+2. Package yang dibuat
+	*com.tobuku.controller
+	*com.tobuku.service
+	*com.tobuku.service.impl
+3. Alur Logic Program menggunakan MVC
+	Data yang di kelola dari sebuah file my-spring-servlet kemudian akan di kelola oleh servlet sebagi akses kontrol penuh untuk di proses berdasarkan data yang akan di tampilkan melalui web.xml kemudian di tampilkan oleh index.jsp. Di dalam index.jsp mempunyai sebuah link yang merujuk ke sebuah variabel String move pada Interface Vehicle selanjutnya pada class SuperCar yang mengimplemetasikan interface tersebut yang akan merujuk ke Variabel atau Objek yang akan di oleh dan di generate sesuai tipe datanya masing masing pada class Car dan akan di control penuh melalui Class VehicleController yang memiliki sebuah method showCar() dan showMove() yang mengembalikan nilai bertipe data ModelAndView. Kemudian method ini masing masing dipetakan menjadi showcar dan showmove oleh annotation @RequestMapping . Selanjutnya class ini akan membuka sebuah file JSP bernama welcome.jsp dengan mengirim teks melalui parameter bernama message.
+
+
+	Model
+	yaitu data yang akan dikelola untuk di deklarasikan kedalam sebuah bean untuk di olah berupa informasi yang akan di gunakan yaitu /resource/spring-service.xml pada bagian mothod bean.
+
+	View
+	yaitu data yang akan di tampilkan ke dalam sebuah presentase layer yang berasal dari sebuah Model data yang dikelola untuk di tampilkan ke dalam sebuah index.jsp dan welcome.jsp.
+
+	Controller
+	yaitu sebuah pengendali penuh atas Model dan View ketika pada saat di eksekusi oleh sebuah pengontrol dari sebuah servlet konfigurasi pada web.xml, maka file ini adalah yang pertama kali di baca oleh application server untuk mengetahui bagaimana aplikasi ini akan di jalankan.
