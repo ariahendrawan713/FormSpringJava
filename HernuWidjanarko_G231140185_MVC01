@@ -1,0 +1,33 @@
+Nama	:	Hernu widjanarko
+NIM		:	G.231.14.0185
+
+ 
+1. Apa sajakah variabel / object yang dibuat?
+
+pada Class : VehicleController.java
+terdapat variabel String : submitForm dan LoadformPage dan
+pada Class : Supercar.java
+terdapat variabel String : type, engine, transmission, fuel, motion .
+pada Class : Vehicle.java
+terdapat Variabel String : move
+
+2. Apa sajakah package yang di buat?
+
+package yang di buat = com.tobuku.controller, com.tobuku.service, com.tobuku.service.impl
+
+3. Bagaimanakah alur logic programming nya? Manakah model nya? viewnya? dan Controller nya?
+
+pada saat request URL berlangsung spring-servlet mengaktifkan bean-controller sesuai dengan mapping yang sudah didefinisikan atau dideklarasikan.
+bean-controller terdeteksi. Kemudian mengarahkan pada dua alternatif :
+Langsung ke View Resolver. 
+Membuka file fisik. Nama file sesuai dengan nilai properti viewName , direktorinya sesuai dengan awalan (prefix )yang didefinisikan pada bean viewResolver, sedangkan ekstensi file tergantung pada akhiran (suffix).
+ke class-controller.
+kelas VehicleController berhasil dieksekusi dan mengembalikan objek ModelAndView. Selanjutnya 
+mengarahkan ke view, yaitu eksekusi kepada mapping URL yang didefinisikan di spring-servlet.xml. 
+ 
+Manakah Model nya?
+ open-car
+Manakah View nya?
+ index.jsp
+Manakah Controller nya?
+ VehicleController.java
